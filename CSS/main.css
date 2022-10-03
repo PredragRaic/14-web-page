@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.first{
+    display: block;
+    background-color: black;
+    background-image: url('../IMG/women.jpg');
+    aspect-ratio: 1 / 1;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 30px 10px;
+    min-width: 300px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.second{
+    display: block;
+    background-color: black;
+    background-image: url('../IMG/pink.jpg');
+    aspect-ratio: 1 / 1;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 30px 10px;
+    min-width: 300px;
+}
+.wrap{
+    position: relative;
+}
+.baner{
+    background-color: white;
+    width: 303px;
+    height: 303px;
+    border-radius: 50%;
+    /* border: solid black 2px; */
+    background-image: url(../IMG/baner.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 88%;
+    position: absolute;
+    z-index: 1;
+    top: calc(50% - 151px);
+    left: calc(50% - 155px);
+}
+p{
+    text-align: center;
+    background-color: darkblue;
+    padding: 30px 0;
+    color: white;
+    font-size: 17px;
+    min-width: 300px;
+}
+a{
+    color: orangered;
+    text-underline-offset: 3px;
+}
+a:hover{
+    text-decoration: none;
+    color: rgb(157, 157, 157);
+}
+@media only screen and (min-width: 768px) {
+    .wrap{
+        display: flex;
+    }
+    .first{
+        width: 50%;
+    }
+    .second{
+        width: 50%;
+    }
+    .baner{
+        
+        width: 34vw;
+        height: 34vw;
+        top: calc(50% - 17vw);
+        left: calc(50% - 17vw);
+        /* background-size: min(20vw, 30vw); */
+    }
+}@media only screen and (min-width: 1200px) {
+    .baner{
+        background-size: 65%;
+        max-width: 414px;
+        max-height: 414px;
+        top: calc(50% - 207px);
+        left: calc(50% - 207px);
+        
+}
+
+}
